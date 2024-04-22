@@ -1,0 +1,43 @@
+{
+  "name": "@yors/vite-plugin-make-type",
+  "version": "1.0.0",
+  "description": "a library package, as a Vite plug-in, used in the yors package to generate d.ts files",
+  "keywords": [
+    "@yors",
+    "vite-plugin",
+    "mini-js"
+  ],
+  "author": "yemiancheng <ymc.github@gmail.com> (https://github.com/ymc-github)",
+  "license": "MIT",
+  "private": false,
+  "main": "./dist/main.cjs",
+  "module": "./dist/main.mjs",
+  "types": "./dist/main.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/main.mjs",
+      "require": "./dist/main.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "types": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ymc-github/vite-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ymc-github/vite-plugin/issues"
+  },
+  "homepage": "https://github.com/ymc-github/vite-plugin/blob/main/vite-plugin/vite-plugin-make-type#readme",
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@yors/vite-plugin-mini-js": "workspace:^",
+    "rollup": "^4.13.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.3",
+    "vite": "^5.2.6"
+  }
+}

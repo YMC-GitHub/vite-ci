@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "vite:build": "turbo run vite:build",
+    "lint": "turbo run lint",
+    "test": "turbo run test"
+  },
+  "dependencies": {
+    "@yors/vite-plugin-make-type": "workspace:*",
+    "@yors/vite-plugin-mini-js": "workspace:*"
+  }
+}
