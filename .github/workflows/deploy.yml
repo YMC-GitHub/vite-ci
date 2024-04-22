@@ -44,15 +44,20 @@ jobs:
         run: pnpm run build
 
       # done
-      # - name: Publish to registry.npmjs.org
-      #   uses: JS-DevTools/npm-publish@v3
-      #   with:
-      #       token: ${{ secrets.NPM_TOKEN }}
-      #       registry: "https://registry.npmjs.org/"
-      #       dry-run: false
+      - name: Publish to registry.npmjs.org
+        uses: JS-DevTools/npm-publish@v3
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          registry: "https://registry.npmjs.org/"
+          dry-run: true
+
+      - name: who am i
+        run: npm whoami
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish to registry.npmjs.org
-        run: pnpm -r publish --no-git-checks
+        run: pnpm -r publish --no-git-checks --dry-run
         shell: bash
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
