@@ -15,5 +15,10 @@
   },
   "devDependencies": {
     "turbo": "^1.13.2"
-  }
+  },
+  "workspaces": [
+    "vite-plugin/*",
+    "vite-plugin-util/*",
+    "vite-config-util/*"
+  ]
 }
