@@ -52,20 +52,21 @@ jobs:
       #     dry-run: true
       # # Package name must be a string, got "undefined" when mono repo.
 
-      - name: Publish to registry.npmjs.org
-        run: npm publish --workspaces --dry-run
+      - name: npm publish to registry.npmjs.org
+        # run: npm publish --workspaces --dry-run
+        run: npm publish --workspaces
         shell: bash
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      # - name: Publish to registry.npmjs.org
-      #   run: pnpm -r publish --no-git-checks --dry-run
-      #   shell: bash
-      #   env:
-      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: pnpm publish to registry.npmjs.org
+        run: pnpm -r publish --no-git-checks --dry-run
+        shell: bash
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       # https://npm.pkg.github.com/
-      - name: Publish to npm.pkg.github.com
+      - name: pnpm publish to npm.pkg.github.com
         run: |
           pnpm set registry https://npm.pkg.github.com/
           pnpm -r publish --no-git-checks --dry-run
