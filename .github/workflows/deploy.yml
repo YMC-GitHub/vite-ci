@@ -44,13 +44,14 @@ jobs:
         run: pnpm run build
 
       # done
-      - name: Publish to registry.npmjs.org
-        uses: JS-DevTools/npm-publish@v3
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
-          registry: "https://registry.npmjs.org/"
-          dry-run: true
-      # Package name must be a string, got "undefined" when mono repo.
+      # - name: Publish to registry.npmjs.org
+      #   uses: JS-DevTools/npm-publish@v3
+      #   with:
+      #     token: ${{ secrets.NPM_TOKEN }}
+      #     registry: "https://registry.npmjs.org/"
+      #     dry-run: true
+      # # Package name must be a string, got "undefined" when mono repo.
+
       - name: Publish to registry.npmjs.org
         run: npm publish --workspaces --dry-run
         shell: bash
