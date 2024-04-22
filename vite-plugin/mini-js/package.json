@@ -1,7 +1,7 @@
 {
   "name": "@yors/vite-plugin-mini-js",
-  "version": "1.0.0",
-  "description": "A vite plugin library package for nano packages to compress js files in dist and do more",
+  "version": "1.0.1",
+  "description": "a library package , as vite plugin , to compress js file for bunlding",
   "keywords": [
     "@yors",
     "vite-plugin",
@@ -26,12 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ymc-github/vite-plugin.git"
+    "url": "git+https://github.com/ymc-github/vite-ci.git"
   },
   "bugs": {
-    "url": "https://github.com/ymc-github/vite-plugin/issues"
+    "url": "https://github.com/ymc-github/vite-ci/issues"
   },
-  "homepage": "https://github.com/ymc-github/vite-plugin/blob/main/vite-plugin/vite-plugin-mini-js#readme",
+  "homepage": "https://github.com/ymc-github/vite-ci/blob/main/vite-plugin/mini-js#readme",
   "devDependencies": {
     "@types/node": "^20.11.30",
     "rollup": "^4.13.0",

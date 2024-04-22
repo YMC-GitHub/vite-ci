@@ -1,6 +1,6 @@
 {
   "name": "@yors/vite-plugin-util-nano",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a library package to share util for vite config as nano categry",
   "keywords": [
     "@yors",
@@ -28,12 +28,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ymc-github/vite-plugin.git"
+    "url": "git+https://github.com/ymc-github/vite-ci.git"
   },
   "bugs": {
-    "url": "https://github.com/ymc-github/vite-plugin/issues"
+    "url": "https://github.com/ymc-github/vite-ci/issues"
   },
-  "homepage": "https://github.com/ymc-github/vite-plugin/blob/main/vite-config-util/vite-config-util-nano#readme",
+  "homepage": "https://github.com/ymc-github/vite-ci/blob/main/vite-config-util/nano#readme",
   "devDependencies": {
     "@types/node": "^20.11.30",
     "rollup": "^4.13.0",

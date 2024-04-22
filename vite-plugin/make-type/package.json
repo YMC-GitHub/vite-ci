@@ -1,7 +1,7 @@
 {
   "name": "@yors/vite-plugin-make-type",
-  "version": "1.0.0",
-  "description": "a library package, as a Vite plug-in, used in the yors package to generate d.ts files",
+  "version": "1.0.1",
+  "description": "a library package, as vite plugin, to generate d.ts file",
   "keywords": [
     "@yors",
     "vite-plugin",
@@ -26,12 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ymc-github/vite-plugin.git"
+    "url": "git+https://github.com/ymc-github/vite-ci.git"
   },
   "bugs": {
-    "url": "https://github.com/ymc-github/vite-plugin/issues"
+    "url": "https://github.com/ymc-github/vite-ci/issues"
   },
-  "homepage": "https://github.com/ymc-github/vite-plugin/blob/main/vite-plugin/vite-plugin-make-type#readme",
+  "homepage": "https://github.com/ymc-github/vite-ci/blob/main/vite-plugin/make-type#readme",
   "devDependencies": {
     "@types/node": "^20.11.30",
     "@yors/vite-plugin-mini-js": "workspace:^",
