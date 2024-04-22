@@ -54,13 +54,17 @@ jobs:
 
       - name: npm publish to registry.npmjs.org
         # run: npm publish --workspaces --dry-run
-        run: npm publish --workspaces
+        run: |
+          npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
+          npm publish --workspaces --dry-run
         shell: bash
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: pnpm publish to registry.npmjs.org
-        run: pnpm -r publish --no-git-checks --dry-run
+        run: |
+          pnpm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
+          pnpm -r publish --no-git-checks --dry-run
         shell: bash
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
