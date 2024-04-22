@@ -63,8 +63,8 @@ jobs:
 
       - name: pnpm publish to registry.npmjs.org
         run: |
-          pnpm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
-          pnpm -r publish --no-git-checks --dry-run
+          # pnpm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
+          pnpm -r publish --no-git-checks
         shell: bash
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
