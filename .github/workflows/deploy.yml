@@ -26,15 +26,6 @@ jobs:
         id: get_version
         run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
 
-      # done
-      - name: Create github Release
-        uses: softprops/action-gh-release@v2
-        with:
-          body_path: README.md
-          # note you'll typically need to create a personal access token
-          # with permissions to create releases in the other repo
-          token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Setup PNPM
         uses: pnpm/action-setup@v3
         with:
@@ -74,3 +65,12 @@ jobs:
         shell: bash
         env:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # done
+      - name: Create github Release
+        uses: softprops/action-gh-release@v2
+        with:
+          body_path: README.md
+          # note you'll typically need to create a personal access token
+          # with permissions to create releases in the other repo
+          token: ${{ secrets.GITHUB_TOKEN }}
