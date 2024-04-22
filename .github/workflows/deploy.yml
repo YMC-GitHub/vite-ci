@@ -61,6 +61,7 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
+      # please create org and sign before publishing private pkg
       - name: pnpm publish to registry.npmjs.org
         run: |
           # pnpm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
