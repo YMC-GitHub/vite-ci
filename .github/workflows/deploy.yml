@@ -52,7 +52,7 @@ jobs:
       #       dry-run: false
 
       - name: Publish to registry.npmjs.org
-        run: pnpm -r publish --no-git-checks --dry-run
+        run: pnpm -r publish --no-git-checks
         shell: bash
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
