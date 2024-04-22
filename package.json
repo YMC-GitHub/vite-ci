@@ -1,4 +1,5 @@
 {
+  "name": "@yors/mono",
   "private": true,
   "scripts": {
     "dev": "turbo run dev",
