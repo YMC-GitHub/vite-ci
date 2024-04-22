@@ -10,5 +10,8 @@
   "dependencies": {
     "@yors/vite-plugin-make-type": "workspace:*",
     "@yors/vite-plugin-mini-js": "workspace:*"
+  },
+  "devDependencies": {
+    "turbo": "^1.13.2"
   }
 }
