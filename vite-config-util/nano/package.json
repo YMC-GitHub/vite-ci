@@ -1,6 +1,6 @@
 {
   "name": "@yors/vite-plugin-util-nano",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "a library package to share util for vite config as nano categry",
   "keywords": [
     "@yors",
