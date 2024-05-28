@@ -1,6 +1,6 @@
 {
   "name": "@yors/vite-plugin-make-type",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "a library package, as vite plugin, to generate d.ts file",
   "keywords": [
     "@yors",
