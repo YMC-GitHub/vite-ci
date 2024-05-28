@@ -14,11 +14,27 @@ a mono repo for vite plug and util
 ## script
 
 ```powershell
+# poly repo or mono repo but only root ? do:
 pnpm i
 pnpm build
 # pnpm vite:build
 # pnpm dev
 # pnpm types
+
+
+# mono repo each sw do ? do:
+pnpm -r i
+pnpm -r build
+# pnpm -r vite:build
+# pnpm -r dev
+# pnpm -r types
+
+# mono repo some sw do ? do:
+pnpm --filter $pkgname i
+# pnpm --filter $pkgname dev
+pnpm --filter $pkgname types
+pnpm --filter $pkgname build
+# pnpm --filter $pkgname vite:build
 
 ```
 
